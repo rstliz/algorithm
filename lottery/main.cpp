@@ -9,18 +9,6 @@ using ll = long long;
   } else {                                                                     \
     cout << "No" << endl;                                                      \
   }
-template <typename T> inline void print(const vector<T> &v, string s = " ") {
-  rep(i, v.size()) cout << v[i] << (i != (ll)v.size() - 1 ? s : "\n");
-}
-template <typename T, typename S> inline void print(const pair<T, S> &p) {
-  cout << p.first << " " << p.second << endl;
-}
-template <typename T> inline void print(const T &x) { cout << x << "\n"; }
-template <typename T, typename S>
-inline void print(const vector<pair<T, S>> &v) {
-  for (auto &&p : v)
-    print(p);
-}
 
 static bool binary_search(int x, vector<int> kk) {
   int l = 0, r = kk.size();
