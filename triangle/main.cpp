@@ -19,7 +19,6 @@ int main() {
   int ans = 0;
 
   rep(i, n) {
-    cin >> a[i];
     reps(j, i + 1, n) {
       reps(k, j + 1, n) {
         int len = a[i] + a[j] + a[k];
