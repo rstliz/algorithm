@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Build with Clang",
+      "command": "/usr/local/bin/g++",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}/main.out",
+        "&&",
+        "${fileDirname}/main.out",
+        "<${fileDirname}/debug.in"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
