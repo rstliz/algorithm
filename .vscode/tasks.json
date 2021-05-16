@@ -4,14 +4,7 @@
       "type": "shell",
       "label": "Build with Clang",
       "command": "/usr/local/bin/g++",
-      "args": [
-        "${file}",
-        "-o",
-        "${fileDirname}/main.out",
-        "&&",
-        "${fileDirname}/main.out",
-        "<${fileDirname}/debug.in"
-      ],
+      "args": ["${file}", "-o", "${fileDirname}/main.out", "--debug"],
       "group": {
         "kind": "build",
         "isDefault": true
