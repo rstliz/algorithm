@@ -15,7 +15,7 @@ int main() {
   bool flag = true;
   while (flag) {
     flag = false;
-    rep(i, N) {
+    for (int i = N - 1; i > 0; --i) {
       if (A[i] < A[i - 1]) {
         swap(A[i], A[i - 1]);
         flag = true;
