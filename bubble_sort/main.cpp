@@ -13,11 +13,11 @@ int main() {
 
   int cnt = 0;
   bool flag = true;
-  while (flag) {
+  for (int i = 0; flag; ++i) {
     flag = false;
-    for (int i = N - 1; i > 0; --i) {
-      if (A[i] < A[i - 1]) {
-        swap(A[i], A[i - 1]);
+    for (int j = N - 1; j > i; --j) {
+      if (A[j] < A[j - 1]) {
+        swap(A[j], A[j - 1]);
         flag = true;
         ++cnt;
       }
