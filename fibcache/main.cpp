@@ -6,7 +6,7 @@ int cache[INT_MAX];
 
 int fib(int n) {
   if (n <= 1) {
-    return n;
+    return 1;
   }
   if (cache[n]) {
     return cache[n];
